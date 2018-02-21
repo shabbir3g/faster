@@ -1,0 +1,67 @@
+<h1 class="nycd red_titles titre_fleches">Contact</h1>
+               <div id="contact_form">
+                  <p>
+                     Pour nous permettre de vous apporter une réponse dans les meilleurs délais, merci de préciser :
+                  </p>
+                     <div class="input select optional contact_request_statut">
+                        <label class="select optional control-label" for="contact_request_statut">Vous êtes</label>
+                        [select* menu-208 id:selectoptional class:contact_request_statut "Sélectionnez" "Entreprise" "Salarié demandeur DIF" "Particulier"]
+                     </div>
+                     <div class="input select optional contact_request_civilite">
+                        <label class="select optional control-label" for="contact_request_civilite">Civilité</label>
+                        [select* menu-897 id:contact_request_civilite class:select class:optional "Sélectionnez" "Monsieur" "Madame" "Mademoiselle"]
+                     </div>
+                     <div class="input string optional contact_request_nom"><label class="string optional control-label" for="contact_request_nom">Nom</label>
+					 [text text-789 id:contact_request_nom class:string class:optional]
+					 </div>
+                     <div class="input string optional contact_request_prenom">
+					 <label class="string optional control-label" for="contact_request_prenom">Prénom</label>
+					 [text text-750 id:contact_request_prenom class:string class:optional]
+					 </div>
+                     <div class="input string optional contact_request_societe">
+					 <label class="string optional control-label" for="contact_request_societe">Société</label>
+					 [text text-740 id:contact_request_societe class:string class:optional]
+					
+					 </div>
+                     <div class="input email required contact_request_email"><label class="email required control-label" for="contact_request_email">Votre e-mail <abbr title="requis">*</abbr></label>
+					 
+					 [email* email-427 id:contact_request_email class:string class:email class:required]
+					 </div>
+                     <div class="input tel optional contact_request_telephone field_with_hint"><label class="tel optional control-label" for="contact_request_telephone">Votre n° de téléphone</label>
+					 
+					 [tel tel-207 id:contact_request_telephone class:string class:tel class:optional]
+					 
+					 <span class="hint">Entrez votre numéro de téléphone fixe ou portable, sans espaces</span></div>
+                     <div class="input string optional contact_request_code_postal"><label class="string optional control-label" for="contact_request_code_postal">Code postal</label>
+					 [text text-540 id:contact_request_code_postal class:string class:optional]
+					 
+					 </div>
+                     <div class="input string optional contact_request_ville"><label class="string optional control-label" for="contact_request_ville">Ville</label>
+					 [text text-380 id:contact_request_ville class:string class:optional]
+					
+					 </div>
+                     <div class="input select optional contact_request_formation">
+                        <label class="select optional control-label" for="contact_request_formation">La formation recherchée</label>
+                        [select menu-185 id:contact_request_formation class:select class:optional "Sélectionnez" "Langues Étrangères" "Développement personnel" "Bureautique" "Communication" "Comptabilité" "Développement personnel" "Management" "Informatique" "Infographie" "Langues" "Web / Internet"]
+                     </div>
+                     <div class="input string optional contact_request_formation_precisions field_with_hint"><label class="string optional control-label" for="contact_request_formation_precisions">Précisez</label>
+					 [text text-280 id:contact_request_formation_precisions class:string class:optional]
+					 
+					 <span class="hint">Précisez les logiciels, versions, objectifs visés...</span></div>
+                     <div class="input radio_buttons required contact_request_formation_preference_groupe"><label class="radio_buttons required control-label">Votre préférence sur le type de formation recherché <abbr title="requis">*</abbr></label>
+					 
+					 [radio radio-449 class:radio_buttons class:required default:1 "En individuel" "En groupe"]
+					 
+					 </div>
+					 
+                     <div class="input string required contact_request_objet"><label class="string required control-label" for="contact_request_objet">Objet <abbr title="requis">*</abbr></label>
+					 [text text-950 id:contact_request_objet class:string class:optional]
+					
+					 </div>
+                     <div class="input text required contact_request_message"><label class="text required control-label" for="contact_request_message">Votre message <abbr title="requis">*</abbr></label>
+					 
+					[textarea* textarea-977 id:contact_request_message class:text class:required]
+                     </div>
+                     <p>Les champs marqués de * sont obligatoires</p>
+                     [submit class:btn "Valider"]
+               </div>
